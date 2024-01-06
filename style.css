@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+*{
+    font-family: 'Montserrat',sans-serif;
+    margin: 0;
+    padding: 0;
+   box-sizing: border-box;
+   
+}
+.container{
+    width: 1300px;
+    padding: 100px 15px;
+    margin: 0 auto;
+}
+.section-title{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+.nav-menu{
+    position:fixed;
+width: 100%;
+background-color: black;
+height: 100px;
+display: flex;
+justify-content: space-between;
+align-items: center;
+overflow: hidden;
+z-index: 100;
+}
+.nav-item{
+   
+  text-decoration: none; 
+ text-align: center;
+ color: white;
+ font-size: 20px;
+ margin: 0 20px;
+}
+.nav-container{
+
+}
+.main-section{
+    overflow: hidden;
+    height: 100vh;
+    background:linear-gradient(
+    #DB7E7E, #FFC997
+    )
+    
+}
+.main-content-text{
+   font-size: 90px;
+   color:wheat;
+  
+   
+}
+.main-content{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+   
+}
+.main-content-btn{
+    background-color:white ;
+    color: black;
+    text-decoration: none;
+padding: 50px 100px;
+border: none;
+border-radius: 500px;
+font-size: 30px;
+box-shadow: 10px 10px 5px rgb(102, 44, 44);
+}
+
+.main-background {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.circle-1 {
+    position: absolute;
+    top: 580px;
+    left: 150px
+}
+.circle-2{
+    position: absolute;
+    top: 448px;
+    left: 848px;
+    animation-name: circle2;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.circle-3{
+    position: absolute;
+    top: -108px;
+    left: -65px;
+   animation-name: circle3; 
+   animation-duration: 4s;
+   animation-iteration-count: infinite;
+   animation-timing-function: linear;
+}
+.circle-4{
+    position: absolute;
+    top: 380px;
+    left: 0px;
+    animation-name: circle4;
+    animation-duration: 8s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+   
+}
+.circle-5{
+    position: absolute;
+    top: -336px;
+    left: 1028px;
+    animation-name: circle5;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.circle-6{
+    position: absolute;
+    top: 450px;
+    left: 590px;
+    animation-name: circle6;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.circle-7{
+    position: absolute;
+    top: 83px;
+    left: 380px;
+}
+
+
+@keyframes circle2 {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(359deg);
+    }    
+}
+@keyframes circle3{
+0%{
+    transform: translate(0px,0px);
+}
+50%{
+    transform: translate(34px,16px);
+}
+100%{
+    transform: translate(0px,0px);
+}
+}
+@keyframes circle4 {
+    0%{
+        transform: translate(0px,0px) ;
+}
+50%{
+    transform: translate(0px, -90px);
+}
+100%{
+    transform: translate(0px,0px)
+}
+}
+@keyframes circle5{
+    0%{
+        transform: translate(0px,0px);
+    }
+    50%{
+        transform: translate(-85px, 81px);
+    }
+    100%{
+        transform: translate(0px,0px);
+    }
+}
+@keyframes circle6{
+    0%{
+        transform: translate(0px,0px);
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: translate(29 px,11px);
+        
+    }
+    100%{
+         transform: translate(0px,0px);
+         transform: rotate(359deg);
+    }
+}
+.section-text{
+    line-height: 30px;
+    font-size: 20px;
+    padding-left: 10px;
+}
+.doing-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+}
+
+.doing-text {
+    border: none;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 5px 5px rgb(228, 67, 56);
+}
+.doing{
+    background: linear-gradient(7deg, #DB7E7E 18.07%, #FFC997 70%, #FFFFFF 70%);
+}
+
+.services {
+    background: linear-gradient(-187deg, #DB7E7E 70%, #FFFFFF 70%);
+}
+
+.nashi-services{
+    padding-top: 30px;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+    text-align: center;
+}
+
+.services-cards {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    padding-top:5px;
+    background-color: white;
+    border: 5px solid orange;
+    border-radius: 15px;
+    width: 15%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    margin: 0 100px;
+}
+
+.card > img {
+    width: 70%;
+    margin-bottom: 40px;
+}
+
+.card > h3 {
+    margin-bottom: 5px;
+}
+
+.card > hr{
+    height: 3px;
+    width: 80%;
+    background-color: orange;
+    margin-bottom: 30px;
+}
+
+.card > p {
+    text-align: justify;
+    font-size: 12px;
+    padding: 0 5px;
+}
+.card-good{
+    padding-top:5px;
+    background-color: white;
+    border: 5px solid orange;
+    border-radius: 15px;
+    width: 50%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: auto;
+    margin-top: 75px;
+    text-align: left;
+    padding-left: 15px;
+    
+}
+
+.card-good  li {
+    margin-left: 20px;
+    
+}
+
+.good > h2{
+    text-align: center;
+    margin-top: 50px;
+}
+.card-good > h3{
+    padding-bottom: 10px;
+}
+.two{
+    margin-right: 50px;
+}
+.shadow{
+    
+}
+
+    
